@@ -25,3 +25,5 @@ if ((age < 18) || (age >= 65) || ((age >= 18) && (age < 65))){
 else {
     console.log('Errore inserisci dei numeri validi!');
 }
+
+/* Non mi ricordo come mettere l'errore anche quando lo user non mette nulla nel prompt */
