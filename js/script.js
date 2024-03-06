@@ -12,13 +12,13 @@ let priceOfTrip = (0.21 * kilosChoosed);
 let priceMinor = (priceOfTrip -(priceOfTrip * 0.2));
 let priceOld = (priceOfTrip - (priceOfTrip * 0.4));
 
-if ((age <= 18) || (age >= 65) || ((age > 18) && (age < 65))){
-    if (age <= 18){
+if ((age < 18) || (age >= 65) || ((age >= 18) && (age < 65))){
+    if (age < 18){
         console.log(financial(priceMinor));
     } else if(age >= 65){
         console.log(financial(priceOld));
     }
-    else if((age > 18) && (age < 65)){
+    else if((age >= 18) && (age < 65)){
         console.log(financial(priceOfTrip));
     }
 }
