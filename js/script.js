@@ -3,6 +3,10 @@ let age = parseInt(prompt('Quale è la tua età'));
 console.log(kilosChoosed);
 console.log(age);
 
+function financial(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
 let priceOfTrip = (0.21 * kilosChoosed);
 
 let priceMinor = (priceOfTrip -(priceOfTrip * 0.2));
@@ -10,12 +14,12 @@ let priceOld = (priceOfTrip - (priceOfTrip * 0.4));
 
 if ((age <= 18) || (age >= 65) || ((age > 18) && (age < 65))){
     if (age <= 18){
-        console.log(priceMinor);
+        console.log(financial(priceMinor));
     } else if(age >= 65){
-        console.log(priceOld);
+        console.log(financial(priceOld));
     }
     else if((age > 18) && (age < 65)){
-        console.log(priceOfTrip);
+        console.log(financial(priceOfTrip));
     }
 }
 else {
