@@ -9,7 +9,7 @@ function financial(x) {
 
 let priceOfTrip = (0.21 * kilosChoosed);
 
-let priceMinor = (priceOfTrip -(priceOfTrip * 0.2));
+let priceMinor = (priceOfTrip - (priceOfTrip * 0.2));
 let priceOld = (priceOfTrip - (priceOfTrip * 0.4));
 
 if ((age < 18) || (age >= 65) || ((age >= 18) && (age < 65))){
